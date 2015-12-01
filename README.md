@@ -7,6 +7,8 @@ References:
 
 2) [API Help Pages Example] (http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages).
 
+3) [cURL] (http://curl.haxx.se/download.html)
+
 ```
 Note:
 When creating the API Help pages in this project, file ~/App_Data/XmlDocument.xml 
