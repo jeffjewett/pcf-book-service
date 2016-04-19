@@ -1,0 +1,20 @@
+﻿@model BookService.Models.EnvironmentModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Application Instance Details</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        @Html.ActionLink("Show all", "Index", "Environment", new { all = "true" }, null)
+        <table>
+            @foreach (var vcapVar in Model.VcapVariables)
+            {
+                <tr><td>@(vcapVar.Key)</td><td>@(vcapVar.Value)</td></tr>
+            }
+        </table>
+    </div>
+</div>
+
