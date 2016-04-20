@@ -21,3 +21,7 @@ curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west
 2) Create a new book and a new author:
 curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west-1.fe.gopivotal.com/api/books -d '{"Title":"Book Title","Year":2105,"Price":19.95,"Genre":"Fantasy","Author": {"Name":"Public, John Q."}}'
 ```
+# Create the Project
+Open Visual Studio. From the File menu, select New, then select Project. (Or click New Project on the Start page.)
+
+In the New Project dialog, click Web in the left pane and ASP.NET Web Application in the middle pane. Name the project BookService and click OK.
