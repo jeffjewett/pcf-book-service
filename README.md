@@ -139,7 +139,7 @@ At this point, build the project again. Now go through the same steps to add an 
 
 ![](./images/ef10.png)
 
-Add another class named CloudSQLConnection, with the following code:
+Add a class named CloudSQLConnection, with the following code:
 
 ```
 using System;
