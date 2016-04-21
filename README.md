@@ -220,7 +220,7 @@ namespace BookService
 }
 ```
 
-Modify BookServiceContext.cs as follows:
+In order to connect to database with a PCF user-provided service named "connectionString", modify BookServiceContext.cs as follows:
 
 ```
 using System;
