@@ -139,6 +139,8 @@ At this point, build the project again. Now go through the same steps to add an 
 
 ![](./images/ef10.png)
 
+##### Add Database Connection for Cloud Foundry 
+
 Add a class named CloudSQLConnection, with the following code:
 
 ```
