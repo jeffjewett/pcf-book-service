@@ -36,7 +36,7 @@ In the New ASP.NET Project dialog, select the Web API template.
 
 #### 2) Add Models and Controllers
 
-###### Add Model Classes
+##### Add Model Classes
 
 In this tutorial, we'll create the database by using the "Code First" approach to Entity Framework (EF). With Code First, you write C# classes that correspond to datbase tables, and EF creates the database. (For more information, see Entity Framework Development Approaches.)
 
@@ -93,7 +93,7 @@ Entity Framework will use these models to create database tables. For each model
 
 In the Book class, the AuthorId defines a foreign key into the Author table. (For simplicity, I’m assuming that each book has a single author.) The book class also contains a navigation property to the related Author. You can use the navigation property to access the related Author in code. I say more about navigation properties in part 4, Handling Entity Relations.
 
-###### Add Web API Controllers
+##### Add Web API Controllers
 
 In this section, we’ll add Web API controllers that support CRUD operations (create, read, update, and delete). The controllers will use Entity Framework to communicate with the database layer.
 
