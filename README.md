@@ -22,7 +22,7 @@ curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west
 curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west-1.fe.gopivotal.com/api/books -d '{"Title":"Book Title","Year":2105,"Price":19.95,"Genre":"Fantasy","Author": {"Name":"Public, John Q."}}'
 ```
 
-# Build The Sample Project *
+# Build The Sample Project (*)
 #### 1) Create the Project
 Open Visual Studio. From the File menu, select New, then select Project. (Or click New Project on the Start page.)
 
@@ -49,7 +49,7 @@ In Solution Explorer, right click the Models folder. Select Add, then select Cla
 
 ![](./images/ef03.png)
 
-Replace all of the boilerplate code in Author.cs with the following code.
+Replace all of the boilerplate code in Author.cs with the following code:
 
 ```
 using System.Collections.Generic;
@@ -66,7 +66,7 @@ namespace BookService.Models
 }
 ```
 
-Add another class named Book, with the following code.
+Add another class named Book, with the following code:
 
 ```
 using System.ComponentModel.DataAnnotations;
@@ -135,6 +135,10 @@ Click Add to complete the Add Controller dialog. The dialog adds two classes to 
 At this point, build the project again. Now go through the same steps to add an API controller for Book entities. This time, select Book for the model class, and select the existing BookServiceContext class for the data context class. (Don't create a new data context.) Click Add to add the controller.
 
 ![](./images/ef10.png)
+
+(*) Adapted from [Using Web API 2 with Entity Framework 6 by Mike Wasson](http://www.asp.net/web-api/overview/data/using-web-api-with-entity-framework/part-1 "ASP.NET Forum")
+
+Add another class named CloudSQLConnection, with the following code:
 
 ```
 using System;
