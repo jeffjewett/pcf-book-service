@@ -113,10 +113,10 @@ In the Add Scaffold dialog, select “Web API 2 Controller with actions, using E
 
 In the Add Controller dialog, do the following:
 
-  1) In the Model class dropdown, select the Author class. (If you don't see it listed in the dropdown, make sure that you built the project.)
-  2) Check “Use async controller actions”.
-  3) Leave the controller name as "AuthorsController".
-  4) Click plus (+) button next to Data Context Class.
+  1. In the Model class dropdown, select the Author class. (If you don't see it listed in the dropdown, make sure that you built the project.)
+  2. Check “Use async controller actions”.
+  3. Leave the controller name as "AuthorsController".
+  4. Click plus (+) button next to Data Context Class.
 
 ![](./images/ef07.png)
 
@@ -126,5 +126,5 @@ In the New Data Context dialog, leave the default name and click Add.
 
 Click Add to complete the Add Controller dialog. The dialog adds two classes to your project:
 
-AuthorsController defines a Web API controller. The controller implements the REST API that clients use to perform CRUD operations on the list of authors.
-BookServiceContext manages entity objects during run time, which includes populating objects with data from a database, change tracking, and persisting data to the database. It inherits from DbContext.
+  * AuthorsController defines a Web API controller. The controller implements the REST API that clients use to perform CRUD operations on the list of authors.
+  * BookServiceContext manages entity objects during run time, which includes populating objects with data from a database, change tracking, and persisting data to the database. It inherits from DbContext.
