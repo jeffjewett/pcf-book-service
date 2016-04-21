@@ -22,7 +22,7 @@ curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west
 curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west-1.fe.gopivotal.com/api/books -d '{"Title":"Book Title","Year":2105,"Price":19.95,"Genre":"Fantasy","Author": {"Name":"Public, John Q."}}'
 ```
 
-# Build The Sample Project
+# Build The Sample Project *
 #### 1) Create the Project
 Open Visual Studio. From the File menu, select New, then select Project. (Or click New Project on the Start page.)
 
@@ -42,8 +42,9 @@ In this tutorial, we'll create the database by using the "Code First" approach t
 
 We start by defining our domain objects as POCOs (plain-old CLR objects). We will create the following POCOs:
 
-Author
-Book
+  * Author
+  * Book
+
 In Solution Explorer, right click the Models folder. Select Add, then select Class. Name the class Author.
 
 ![](./images/ef03.png)
@@ -128,3 +129,9 @@ Click Add to complete the Add Controller dialog. The dialog adds two classes to 
 
   * AuthorsController defines a Web API controller. The controller implements the REST API that clients use to perform CRUD operations on the list of authors.
   * BookServiceContext manages entity objects during run time, which includes populating objects with data from a database, change tracking, and persisting data to the database. It inherits from DbContext.
+
+![](./images/ef09.png)
+
+At this point, build the project again. Now go through the same steps to add an API controller for Book entities. This time, select Book for the model class, and select the existing BookServiceContext class for the data context class. (Don't create a new data context.) Click Add to add the controller.
+
+![](./images/ef10.png)
