@@ -184,21 +184,6 @@ namespace BookService
                             var credentialDict = (Newtonsoft.Json.Linq.JObject)currCredentials["credentials"];
                             if (credentialDict != null)
                             {
-                                // ref:
-                                //"server=10.68.44.52;user id=h7RwvfDzRpnKFSxG;password=rUNfPngOGCqgqmrj;database=rUNfPngOGCqgqmrj;Persist Security Info=True";
-                                //
-
-                                //string host = (String)credentialDict["hostname"];
-                                //string userid = (String)credentialDict["username"];
-                                //string password = (String)credentialDict["password"];
-                                //string catalog = (String)credentialDict["name"];
-
-                                //actualConnection = String.Format("server={0};user id={1};password={2};database={3};Persist Security Info=True",
-                                //    host,
-                                //    userid,
-                                //    password,
-                                //    catalog);
-
                                 actualConnection = (String)credentialDict["connectionString"];
 
                                 if (actualConnection != null)
