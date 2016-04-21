@@ -25,3 +25,5 @@ curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west
 Open Visual Studio. From the File menu, select New, then select Project. (Or click New Project on the Start page.)
 
 In the New Project dialog, click Web in the left pane and ASP.NET Web Application in the middle pane. Name the project BookService and click OK.
+
+![](./images/ef01.png)
