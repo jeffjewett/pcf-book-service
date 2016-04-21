@@ -98,3 +98,33 @@ In the Book class, the AuthorId defines a foreign key into the Author table. (Fo
 In this section, we’ll add Web API controllers that support CRUD operations (create, read, update, and delete). The controllers will use Entity Framework to communicate with the database layer.
 
 First, you can delete the file Controllers/ValuesController.cs. This file contains an example Web API controller, but you don’t need it for this tutorial.
+
+![](./images/ef21.png)
+
+Next, build the project. The Web API scaffolding uses reflection to find the model classes, so it needs the compiled assembly.
+
+In Solution Explorer, right-click the Controllers folder. Select Add, then select Controller.
+
+![](./images/ef05.png)
+
+In the Add Scaffold dialog, select “Web API 2 Controller with actions, using Entity Framework”. Click Add.
+
+![](./images/ef06.png)
+
+In the Add Controller dialog, do the following:
+
+  1) In the Model class dropdown, select the Author class. (If you don't see it listed in the dropdown, make sure that you built the project.)
+  2) Check “Use async controller actions”.
+  3) Leave the controller name as "AuthorsController".
+  4) Click plus (+) button next to Data Context Class.
+
+![](./images/ef07.png)
+
+In the New Data Context dialog, leave the default name and click Add.
+
+![](./images/ef08.png)
+
+Click Add to complete the Add Controller dialog. The dialog adds two classes to your project:
+
+AuthorsController defines a Web API controller. The controller implements the REST API that clients use to perform CRUD operations on the list of authors.
+BookServiceContext manages entity objects during run time, which includes populating objects with data from a database, change tracking, and persisting data to the database. It inherits from DbContext.
