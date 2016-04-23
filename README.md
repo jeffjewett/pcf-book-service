@@ -14,7 +14,7 @@ curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west
 curl -i -X POST -H "Content-Type: application/json" http://pcf-book-service.west-1.fe.gopivotal.com/api/books -d '{"Title":"Book Title","Year":2105,"Price":19.95,"Genre":"Fantasy","Author": {"Name":"Public, John Q."}}'
 ```
 
-# Build The Sample Project
+# Build The (Basic) Sample Project
 
 {Adapted from [Using Web API 2 with Entity Framework 6 by Mike Wasson](http://www.asp.net/web-api/overview/data/using-web-api-with-entity-framework/part-1 "ASP.NET Forum")}
 
